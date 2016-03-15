@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DIR=~/conkyconf/
+DIR=~/projects/conkyconf/
 
 writeToKernel() {
     echo "<1>[Conky] $1" | sudo tee /dev/kmsg
@@ -18,7 +18,7 @@ launch() {
 }
 
 main() {
-    launch "kernel_rc"
+#    launch "kernel_rc"
     launch "system_rc"
     launch "battery_rc"
     launch "temperature_rc"
