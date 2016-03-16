@@ -3,7 +3,7 @@
 DIR=~/projects/conkyconf/
 
 writeToKernel() {
-    echo "<1>[Conky] $1" | sudo tee /dev/kmsg
+    echo "<1>[Conky] $1" | tee /dev/kmsg
 }
 
 launch() {
