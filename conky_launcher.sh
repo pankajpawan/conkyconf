@@ -1,5 +1,4 @@
-#!/bin/bash
-
+killall conky
 DIR=~/projects/conkyconf/
 
 writeToKernel() {
