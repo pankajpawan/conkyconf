@@ -1,4 +1,4 @@
-killall conky
+killall -9 conky
 DIR=~/projects/conkyconf/
 
 writeToKernel() {
@@ -19,9 +19,9 @@ launch() {
 main() {
 #    launch "kernel_rc"
     launch "system_rc"
-    launch "battery_rc"
-    launch "temperature_rc"
-    launch "cooling_rc"
+#    launch "battery_rc"
+#    launch "temperature_rc"
+#    launch "cooling_rc"
     launch "load_rc"
     launch "memory_rc"
     launch "io_rc"

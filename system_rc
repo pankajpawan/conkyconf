@@ -46,4 +46,6 @@ ${font monospace:bold:size=8}#
 ${color FA9600}SYSTEM ${hr}${color }
 
 UPTIME:${alignr}${uptime_short}
+LOAD:${alignr}${loadavg}
+CPU TEMP: ${alignr} ${exec sensors | grep 'Physical id 0' | cut -c18-21}C
 ENTROPY:${alignr}${entropy_perc}%
