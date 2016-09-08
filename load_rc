@@ -18,7 +18,7 @@ draw_graph_borders yes
 draw_outline no
 draw_shades no
 gap_x 0
-gap_y 294
+gap_y 120
 maximum_width 240
 minimum_size 300
 no_buffers yes
@@ -57,7 +57,8 @@ ${template0 4}${exec awk '/cpu MHz/{i++}i==5{printf "% 5d",$4; exit}' /proc/cpui
 ${template0 5}${exec awk '/cpu MHz/{i++}i==6{printf "% 5d",$4; exit}' /proc/cpuinfo}MHz
 ${template0 6}${exec awk '/cpu MHz/{i++}i==7{printf "% 5d",$4; exit}' /proc/cpuinfo}MHz
 ${template0 7}${exec awk '/cpu MHz/{i++}i==8{printf "% 5d",$4; exit}' /proc/cpuinfo}MHz
-${color}CPU Usage
+
+${color FA9600}CPU Usage ${hr}${color }
 ${color}Name              PID     CPU%   MEM%
 ${color #ddaa00} ${top name 1} ${top pid 1} ${top cpu 1} ${top mem 1}
 ${color lightgrey} ${top name 2} ${top pid 2} ${top cpu 2} ${top mem 2}

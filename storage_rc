@@ -18,7 +18,7 @@ draw_graph_borders yes
 draw_outline no
 draw_shades no
 gap_x 0
-gap_y 672
+gap_y 772
 maximum_width 240
 minimum_size 300
 no_buffers yes
